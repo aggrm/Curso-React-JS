@@ -11,7 +11,7 @@ for(let i = 0; i < tecnologias2.length; i++ ){
 //Iterador forEach ejecuta funcion dada por cantidad de longitud del array
 const arrayForEach = tecnologias2.forEach(element => {
     return element
-});
+}); 
 
 tecnologias2.forEach(function(tecnologia) {
     console.log('element :>> ', tecnologia);
