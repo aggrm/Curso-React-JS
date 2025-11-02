@@ -1,0 +1,39 @@
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js']
+const tecnologias2 = ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js']
+
+
+//forma tadicional
+for(let i = 0; i < tecnologias2.length; i++ ){
+    console.log('tecnologias :>> ', tecnologias[i]);
+}
+
+
+//Iterador forEach ejecuta funcion dada por cantidad de longitud del array
+const arrayForEach = tecnologias2.forEach(element => {
+    return element
+});
+
+tecnologias2.forEach(function(tecnologia) {
+    console.log('element :>> ', tecnologia);
+});
+
+//Map genera un nuevo arreglo en vase a condicion o funcion que le das
+const arrayMap = tecnologias2.map(function(tecnologia) {
+    return tecnologia
+});
+
+const arrayMap1 = tecnologias2.map(function(tecnologia) {
+    return "hola"
+});
+console.log('arrayMap1 :>> ', arrayMap1);
+
+//Comparativas de foreac y map el map si que devolvera datos foreach undefined
+console.log('arrayForEach :>> ', arrayForEach);
+console.log('arrayMap :>> ', arrayMap);
+
+
+//For of
+for (const tech of tecnologias) {
+    console.log('tech :>> ', tech);
+}
+
